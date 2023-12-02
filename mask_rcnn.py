@@ -49,10 +49,10 @@ cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.7
 predictor = DefaultPredictor(cfg)
 
 # Perform the prediction on images:
-for image_in in os.listdir("images_in/"):
+for image_in in os.listdir("input_images/"):
     
     # Load image and perform prediction:
-    pred_img = cv2.imread("images_in/"+ image_in)
+    pred_img = cv2.imread("input_images/"+ image_in)
     outputs = predictor(pred_img)
 
     # Prepare predicted masks:
@@ -70,4 +70,4 @@ for image_in in os.listdir("images_in/"):
     image_array = np.where(predict == 1, 255, predict)
     image_array = np.stack([image_array, image_array, image_array], axis=0).astype(np.uint8)
     image = cv2.cvtColor(image_array.transpose(1, 2, 0), cv2.COLOR_RGB2BGR)
-    cv2.imwrite("images_ou/" + image_in[:-4] + '_mask.jpg', image)  
+    cv2.imwrite("output_images/" + image_in[:-4] + '_mask.jpg', image)  
