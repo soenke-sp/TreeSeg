@@ -2,6 +2,7 @@ name: detectron
 channels:
   - esri
   - defaults
+  - conda-forge
 dependencies:
   - anyio=3.5.0=py39haa95532_0
   - arcgispro=3.1=0
