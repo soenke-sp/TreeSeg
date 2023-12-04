@@ -1,9 +1,9 @@
 name: detectron
 channels:
-  - conda-forge
-  - esri
   - fvcore
   - iopath
+  - conda-forge
+  - esri
   - defaults
 dependencies:
   - anyio=3.5.0=py39haa95532_0
