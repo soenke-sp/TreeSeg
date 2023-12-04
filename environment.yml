@@ -1,8 +1,10 @@
 name: detectron
 channels:
   - esri
-  - defaults
+  - fvcore
+  - iopath
   - conda-forge
+  - defaults
 dependencies:
   - anyio=3.5.0=py39haa95532_0
   - arcgispro=3.1=0
@@ -162,6 +164,9 @@ dependencies:
   - zstd=1.5.5=hd43e919_0
   - opencv
   - cloudpickle
+  - fvcore
+  - omegaconf
+  - pycocotools
   - pip:
     - absl-py==1.4.0
     - antlr4-python3-runtime==4.9.3
@@ -222,7 +227,4 @@ dependencies:
     - uritemplate==4.1.1
     - werkzeug==2.3.6
     - yacs==0.1.8
-    - zipp==3.16.2
-    - git+https://github.com/facebookresearch/fvcore.git
-    - omegaconf
-    - pycocotools
+    - zipp==3.16.2\
