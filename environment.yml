@@ -162,6 +162,7 @@ dependencies:
   - zeromq=4.3.4=0
   - zlib=1.2.13=0
   - zstd=1.5.5=hd43e919_0
+  - iopath
   - opencv
   - cloudpickle
   - fvcore
