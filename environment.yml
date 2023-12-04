@@ -1,7 +1,7 @@
 name: detectron
 channels:
-  - esri
   - conda-forge
+  - esri
   - fvcore
   - iopath
   - defaults
