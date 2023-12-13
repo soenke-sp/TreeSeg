@@ -1,9 +1,6 @@
 from segment_anything import SamAutomaticMaskGenerator, sam_model_registry
 import numpy as np
-import matplotlib.pyplot as plt
 import os
-import rasterio
-import arcpy
 
 #SAM model type:
 checkpoint_path = "checkpoint/sam_vit_h_4b8939.pth"
@@ -59,14 +56,8 @@ for raster in assets:
     for index in masks:
         result_mask = np.logical_or(result_mask, index["segmentation"])
 
-    result_mask = np.uint8(255 * result_mask)
-    
-
-    kwargs = input_img.meta
-    kwargs.update(
-        dtype=rasterio.int8,
-        count=1,
-        compress='lzw')
-    
-    with rasterio.open("output_images/" + raster[:-4]+"_mask.tif", 'w', **kwargs) as dst:
-        dst.write_band(1, result_mask.astype(rasterio.uint8))
+    # Generate images from masks:
+    image_array = np.where(predict == 1, 255, result_mask)
+    image_array = np.stack([image_array, image_array, image_array], axis=0).astype(np.uint8)
+    image = cv2.cvtColor(image_array.transpose(1, 2, 0), cv2.COLOR_RGB2BGR)
+    cv2.imwrite("output_images/" + image_in[:-4] + '_mask.jpg', image)  
