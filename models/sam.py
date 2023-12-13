@@ -20,10 +20,10 @@ def show_anns(anns):
         color_mask = np.concatenate([np.random.random(3), [0.35]])
         img[m] = color_mask
 
-assets = os.listdir("input/")
+assets = os.listdir("input_images/")
 
 for raster in assets:
-    input_img = rasterio.open("input/" + raster)
+    input_img = rasterio.open("input_images/" + raster)
     
     band_1 = input_img.read(3)*255.0/input_img.read(3).max() 
     band_2 = input_img.read(2)*255.0/input_img.read(2).max() 
@@ -68,5 +68,5 @@ for raster in assets:
         count=1,
         compress='lzw')
     
-    with rasterio.open("output/" + raster[:-4]+"_mask.tif", 'w', **kwargs) as dst:
+    with rasterio.open("output_images/" + raster[:-4]+"_mask.tif", 'w', **kwargs) as dst:
         dst.write_band(1, result_mask.astype(rasterio.uint8))
