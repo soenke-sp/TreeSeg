@@ -9,4 +9,4 @@ dependencies:
   - torchvision>=0.8
   - git
   - pip
-  - opencv
+  - opencv=4.5.2
