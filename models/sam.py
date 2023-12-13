@@ -1,7 +1,7 @@
 from segment_anything import SamAutomaticMaskGenerator, sam_model_registry
 import numpy as np
 import os
-import rasterio
+import cv2
 
 #SAM model type:
 checkpoint_path = "checkpoint/sam_vit_h_4b8939.pth"
@@ -18,16 +18,11 @@ def show_anns(anns):
         color_mask = np.concatenate([np.random.random(3), [0.35]])
         img[m] = color_mask
 
-assets = os.listdir("input_images/")
+images = os.listdir("input_images/")
 
-for raster in assets:
-    input_img = rasterio.open("input_images/" + raster)
+for img in images:
     
-    band_1 = input_img.read(3)*255.0/input_img.read(3).max() 
-    band_2 = input_img.read(2)*255.0/input_img.read(2).max() 
-    band_3 = input_img.read(1)*255.0/input_img.read(1).max() 
-    
-    rgb_img = np.uint8(np.dstack((band_1,band_2,band_3)))
+    image = cv2.imread("input_images/" + img)
     
     sam = sam_model_registry[model_type](checkpoint=checkpoint_path)
     
@@ -44,7 +39,7 @@ for raster in assets:
         min_mask_region_area=1000
             )
     
-    masks = mask_generator.generate(rgb_img)
+    masks = mask_generator.generate(image)
     
     index = 0
     while index != len(masks):
@@ -59,12 +54,4 @@ for raster in assets:
 
     result_mask = np.uint8(255 * result_mask)
     
-    #Create Tiff from mask:
-    kwargs = input_img.meta
-    kwargs.update(
-        dtype=rasterio.int8,
-        count=1,
-        compress='lzw')
-    
-    with rasterio.open("#predict/" + raster[:-4]+"_mask.tif", 'w', **kwargs) as dst:
-        dst.write_band(1, result_mask.astype(rasterio.uint8))
+    cv2.imwrite(img, result_mask) 
