@@ -1,4 +1,4 @@
-name: sam_meta
+name: segment_anything_model
 channels:
   - esri
   - defaults
