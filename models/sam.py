@@ -6,6 +6,8 @@ import cv2
 #SAM model type:
 checkpoint_path = "checkpoint/sam_vit_h_4b8939.pth"
 
+model_type = "default"
+
 def show_anns(anns):
     global img
     if len(anns) == 0:
