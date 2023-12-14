@@ -40,7 +40,7 @@ cfg.SOLVER.WARMUP_FACTOR = 1e-3
 cfg.SOLVER.WARMUP_METHOD = "linear"
 
 # Load pre-trained weights for the model:
-cfg.MODEL.WEIGHTS = "mask_rcnn.pth"
+cfg.MODEL.WEIGHTS = "mask_rcnn_cp.pth"
 
 # Set the threshold for the prediction:
 cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.7
