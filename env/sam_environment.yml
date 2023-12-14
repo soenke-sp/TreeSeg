@@ -1,7 +1,7 @@
 name: segment_anything_model
 channels:
-  - conda-forge
   - pytorch
+  - conda-forge
   - defaults
 dependencies:
   - python=3.8
