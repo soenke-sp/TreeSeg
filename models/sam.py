@@ -56,4 +56,4 @@ for img in images:
 
     result_mask = np.uint8(255 * result_mask)
     
-    cv2.imwrite("output_images/" + img, result_mask) 
+    cv2.imwrite("output_images/fertig.jpg", result_mask) 
