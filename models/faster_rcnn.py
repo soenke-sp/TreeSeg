@@ -18,25 +18,25 @@ setup_logger()
 cfg = get_cfg()
 
 # Select Faster-RCNN model:
-model_type = "COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"
+model_type = "COCO-Detection/faster_rcnn_X_101_32x8d_FPN_3x.yaml"
 cfg.merge_from_file(model_zoo.get_config_file(model_type))
 
 # Configure the hyperparameter:
 cfg.MODEL.ROI_HEADS.NUM_CLASSES = 2
 cfg.MODEL.MASK_ON = True
-cfg.SOLVER.MAX_ITER = 10000
-cfg.SOLVER.IMS_PER_BATCH = 8
-cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 512
+cfg.SOLVER.MAX_ITER = 40000
+cfg.SOLVER.IMS_PER_BATCH = 1
+cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 1024
 cfg.SOLVER.BASE_LR = 0.001
-cfg.SOLVER.GAMMA = 0.05
-cfg.SOLVER.WEIGHT_DECAY = 1e-4
-cfg.SOLVER.NESTEROV = False
-cfg.SOLVER.MOMENTUM = 0.9
-cfg.SOLVER.WEIGHT_DECAY_NORM = 1e-3
-cfg.SOLVER.BIAS_LR_FACTOR = 2
-cfg.SOLVER.WEIGHT_DECAY_BIAS = 1e-3
-cfg.SOLVER.NUM_DECAYS = 3
-cfg.SOLVER.WARMUP_FACTOR = 1e-3
+cfg.SOLVER.GAMMA = 0.01
+cfg.SOLVER.WEIGHT_DECAY = 0.01
+cfg.SOLVER.NESTEROV = True
+cfg.SOLVER.MOMENTUM = 0.85
+cfg.SOLVER.WEIGHT_DECAY_NORM = 0.05
+cfg.SOLVER.BIAS_LR_FACTOR = 1
+cfg.SOLVER.WEIGHT_DECAY_BIAS = 0.05
+cfg.SOLVER.NUM_DECAYS = 5
+cfg.SOLVER.WARMUP_FACTOR = 0.05
 cfg.SOLVER.WARMUP_METHOD = "linear"
 
 # Load pre-trained weights for the model:
