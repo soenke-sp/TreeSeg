@@ -19,7 +19,7 @@ cfg = get_cfg()
 
 # Select Tensormask model:
 model_type = "COCO-InstanceSegmentation/tensormask_R_50_FPN_6x.yaml"
-cfg.merge_from_file(model_zoo.get_config_file(model_type))
+cfg.MODEL.TENSOR_MASK = CN()
 
 # Configure the hyperparameter:
 cfg.MODEL.ROI_HEADS.NUM_CLASSES = 2
