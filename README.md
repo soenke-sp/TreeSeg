@@ -18,10 +18,6 @@ To run this project, follow these steps:
 2. Select the desired model.
 3. Run the script tool to perform the instance segmentation and generate the shapefile of individual trees.
 
-## Contributing
-
-Please read our [contribution guidelines](CONTRIBUTING.md) before submitting any changes.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
