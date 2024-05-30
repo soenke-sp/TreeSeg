@@ -1,28 +1,27 @@
-# Mein Projekt
+# My Project
 
-Eine kurze Beschreibung meines Projekts.
+A brief description of my project.
 
 ## Installation
 
-Um dieses Projekt auszuführen, führen Sie die folgenden Schritte aus:
+To run this project, follow these steps:
 
-1. Klonen Sie das Repository: `git clone https://github.com/dein-benutzername/mein-projekt.git`
-2. Wechseln Sie in das Projektverzeichnis: `cd mein-projekt`
-3. Führen Sie die Installationsanweisungen aus: `instructions.md`
+1. Clone the repository: `git clone https://github.com/your-username/my-project.git`
+2. Navigate to the project directory: `cd my-project`
+3. Follow the installation instructions: `instructions.md`
 
-## Verwendung
+## Usage
 
-Führen Sie das Projekt mit dem Befehl `python main.py` aus. Weitere Optionen sind verfügbar in der Dokumentation.
+Run the project with the command `python main.py`. Additional options are available in the documentation.
 
-## Beitragsrichtlinien
+## Contributing
 
-Bitte lesen Sie unsere [Beitragsrichtlinien](CONTRIBUTING.md) vor dem Einreichen von Änderungen.
+Please read our [contribution guidelines](CONTRIBUTING.md) before submitting any changes.
 
-## Lizenz
+## License
 
-Dieses Projekt ist unter der [MIT-Lizenz](LICENSE) lizenziert.
+This project is licensed under the [MIT License](LICENSE).
 
-## Kontakt
+## Contact
 
-Bei Fragen oder Feedback kontaktieren Sie mich unter [email@example.com](mailto:email@example.com).
-
+For questions or feedback, please contact me at [email@example.com](mailto:email@example.com).
