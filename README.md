@@ -1,4 +1,4 @@
-# My Project
+# TreeSeg
 
 A brief description of my project.
 
