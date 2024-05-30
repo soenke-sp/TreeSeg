@@ -1,5 +1,4 @@
 # TreeSeg
-## A toolbox for fully automated tree crown segmentation based on high-resolution multispectral UAV data
 
 A brief description of my project.
 
