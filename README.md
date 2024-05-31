@@ -18,6 +18,13 @@ To run this project, follow these steps:
 2. Select the desired model.
 3. Run the script tool to perform the instance segmentation and generate the shapefile of individual trees.
 
+## Model Checkpoints
+The tool automatically downloads the required model checkpoints. For reference, the checkpoints can be found at the following links:
+
+[Faster R-CNN Checkpoint](https://cloud.thws.de/s/kWYdrbqdy4nWig8/download/faster_rcnn_cp.pth)
+[Mask R-CNN Checkpoint](https://cloud.thws.de/s/3aSkti5gf9JwCmp/download/mask_rcnn_cp.pth)
+[TensorMask Checkpoint](https://cloud.thws.de/s/7ncMw99tdRksroA/download/tensormask_cp.pth)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
