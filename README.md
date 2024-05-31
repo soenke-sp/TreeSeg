@@ -4,7 +4,7 @@ A tool for the segmentation of individual trees. It utilizes ArcGIS Pro and Pyth
 
 For Faster R-CNN, Mask R-CNN, and TensorMask, the NDRE of the multispectral image is first calculated. Subsequently, instance segmentation is performed, and a shapefile containing the individual trees is generated. It should be noted that, due to the optimal hyperparameter configuration, the calculation using SAM may take more than a day.
 
-![Tree Segmentation Example](img/example.png)
+![Tree Segmentation Example](img/example.PNG)
 
 ## Installation
 
