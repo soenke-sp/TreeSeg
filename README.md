@@ -35,7 +35,7 @@ For more detailed information, please refer to the related paper: [Link to Paper
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [License](LICENSE).
 
 ## Contact
 
