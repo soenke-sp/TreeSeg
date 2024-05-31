@@ -27,6 +27,9 @@ The tool automatically downloads the required model checkpoints. For reference, 
 
 [TensorMask Checkpoint](https://cloud.thws.de/s/7ncMw99tdRksroA/download/tensormask_cp.pth)
 
+## Reference
+For more detailed information, please refer to the related paper: [Link to Paper]().
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
