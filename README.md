@@ -8,7 +8,7 @@ For Faster R-CNN, Mask R-CNN, and TensorMask, the NDRE of the multispectral imag
 
 To run this project, follow these steps:
 
-1. Download the script tool file here.
+1. Download the script tool file [here](https://github.com/soenke-sp/TreeSeg/tree/9caecb7a3e1520d2785e9e6cc255cdcdadfe136e/toolbox).
 2. Open the file in ArcGIS Pro.
 3. Run the script tool and follow the instructions.
 
