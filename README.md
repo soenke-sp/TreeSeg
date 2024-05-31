@@ -14,7 +14,7 @@ To run this project, follow these steps:
 
 ## Usage
 
-1. Import the UAV multispectral image into ArcGIS Pro.
+1. Import the UAV multispectral image (R,G,B,NIR,RE) into ArcGIS Pro.
 2. Select the desired model.
 3. Run the script tool to perform the instance segmentation and generate the shapefile of individual trees.  
 *Upon first execution of the tool, automatic installation of the required dependencies will occur. This process may take 20 minutes or longer, depending on your internet connection and system performance.*
