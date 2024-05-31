@@ -8,8 +8,8 @@ For Faster R-CNN, Mask R-CNN, and TensorMask, the NDRE of the multispectral imag
 
 To run this project, follow these steps:
 
-1. Download or clone the project repository.
-2. Open the project in ArcGIS Pro.
+1. Download the script tool file here.
+2. Open the file in ArcGIS Pro.
 3. Run the script tool and follow the instructions.
 
 ## Usage
@@ -24,4 +24,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For questions or feedback, please contact me at [email@example.com](mailto:email@example.com).
+For questions or feedback, please contact me at [s41166332@gmail.com](mailto:s41166332@gmail.com).
