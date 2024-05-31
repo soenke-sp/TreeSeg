@@ -41,3 +41,6 @@ The original detectron2 project can be found at: https://github.com/facebookrese
 
 This project also contains code from the segment-anything project.
 The original segment-anything project can be found at: https://github.com/facebookresearch/segment-anything
+
+This project also contains code from ArcPy.
+More information can be found at: https://github.com/Esri
