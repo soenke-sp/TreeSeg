@@ -21,11 +21,10 @@ To run this project, follow these steps:
 ## Model Checkpoints
 The tool automatically downloads the required model checkpoints. For reference, the checkpoints can be found at the following links:
 
-[Faster R-CNN Checkpoint](https://cloud.thws.de/s/kWYdrbqdy4nWig8/download/faster_rcnn_cp.pth)
+- **Faster R-CNN Checkpoint:** [Download](https://cloud.thws.de/s/kWYdrbqdy4nWig8/download/faster_rcnn_cp.pth)
+- **Mask R-CNN Checkpoint:** [Download](https://cloud.thws.de/s/3aSkti5gf9JwCmp/download/mask_rcnn_cp.pth)
+- **TensorMask Checkpoint:** [Download](https://cloud.thws.de/s/7ncMw99tdRksroA/download/tensormask_cp.pth)
 
-[Mask R-CNN Checkpoint](https://cloud.thws.de/s/3aSkti5gf9JwCmp/download/mask_rcnn_cp.pth)
-
-[TensorMask Checkpoint](https://cloud.thws.de/s/7ncMw99tdRksroA/download/tensormask_cp.pth)
 
 ## Reference
 For more detailed information, please refer to the related paper: [Link to Paper]().
