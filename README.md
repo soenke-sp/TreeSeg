@@ -11,8 +11,8 @@ For Faster R-CNN, Mask R-CNN, and TensorMask, the NDRE (Normalized Difference Re
 
 To run this project, follow these steps:
 
-1. Download the toolbox file [here](https://github.com/soenke-sp/TreeSeg/raw/main/toolbox/TreeSegV0.9.atbx).
-2. Open **TreeSegV0.9.atbx** in ArcGIS Pro. See [Connect to a toolbox](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-a-toolbox.htm) for more information.
+1. Download the toolbox file [here](https://github.com/soenke-sp/TreeSeg/raw/main/toolbox/TreeSegV1.0.atbx).
+2. Open **TreeSegV1.0.atbx** in ArcGIS Pro. See [Connect to a toolbox](https://pro.arcgis.com/en/pro-app/latest/help/projects/connect-to-a-toolbox.htm) for more information.
 3. Run the script tool and follow the instructions.
 
 ## Usage
