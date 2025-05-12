@@ -27,6 +27,25 @@ To run this project, follow these steps:
 3. Run the script tool to perform the instance segmentation and generate the shapefile of individual trees.  
 *Upon first execution of the tool, automatic installation of the required dependencies will occur. This process may take 20 minutes or longer, depending on your internet connection and system performance.*
 
+## Known Issues
+
+### ⚠️ Python Imaging Library (PIL) Error
+
+Some users have encountered the following error when running the tool:
+
+AttributeError: module 'PIL' has no attribute 'Image'
+
+This error typically occurs when PIL is imported incorrectly. To fix it:
+
+1. Ensure you import the module correctly:  
+   from PIL import Image
+
+2. Make sure that the Pillow library (a maintained fork of PIL) is installed and up to date:  
+   pip install --upgrade pillow
+
+3. If the issue persists, refer to this helpful StackOverflow thread:  
+   https://stackoverflow.com/questions/11911480/python-pil-has-no-attribute-image
+
 ## Model Checkpoints
 The tool automatically downloads the required model checkpoints. For reference, the checkpoints can be found at the following links:
 
