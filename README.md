@@ -1,3 +1,8 @@
+⚠️ **This project is no longer maintained.**
+
+The TreeSeg toolbox is outdated and no longer actively supported. While the code remains available for reference, it may not be compatible with the latest versions of ArcGIS Pro or Python environments. Use at your own risk.
+
+
 # TreeSeg
 
 A tool for the segmentation of individual trees. It utilizes ArcGIS Pro and Python and allows processing of UAV multispectral images with channels for RGB, near-infrared, and red edge. The tool provides selection among four tested models: Faster R-CNN, Mask R-CNN, TensorMask, and SAM.
@@ -31,7 +36,7 @@ The tool automatically downloads the required model checkpoints. For reference, 
 
 
 ## Reference
-For more detailed information, please refer to the related paper: [Link to Paper]().
+For more detailed information, please refer to the related paper: [Link to Paper](https://www.mdpi.com/2072-4292/16/19/3660).
 
 ## License
 
