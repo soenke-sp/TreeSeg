@@ -49,9 +49,9 @@ This error typically occurs when PIL is imported incorrectly. To fix it:
 ## Model Checkpoints
 The tool automatically downloads the required model checkpoints. For reference, the checkpoints can be found at the following links:
 
-- **Faster R-CNN Checkpoint:** [Download](https://cloud.thws.de/s/kWYdrbqdy4nWig8/download/faster_rcnn_cp.pth)
-- **Mask R-CNN Checkpoint:** [Download](https://cloud.thws.de/s/3aSkti5gf9JwCmp/download/mask_rcnn_cp.pth)
-- **TensorMask Checkpoint:** [Download](https://cloud.thws.de/s/7ncMw99tdRksroA/download/tensormask_cp.pth)
+- **Faster R-CNN Checkpoint:** [Download](https://drive.google.com/file/d/10PO1XyerhIF8UV9DqO1B04AntQLI8R2E/view?usp=drive_link)
+- **Mask R-CNN Checkpoint:** [Download](https://drive.google.com/file/d/1RkKmjvdPF53ebsneKzTk6H8s5AnfQQj3/view?usp=drive_link)
+- **TensorMask Checkpoint:** [Download](https://drive.google.com/file/d/1FbUYydl0aXa5xQQ7c1wlmH9ZobPE4Ygh/view?usp=drive_link)
 
 
 ## Reference
