@@ -27,6 +27,13 @@ To run this project, follow these steps:
 3. Run the script tool to perform the instance segmentation and generate the shapefile of individual trees.  
 *Upon first execution of the tool, automatic installation of the required dependencies will occur. This process may take 20 minutes or longer, depending on your internet connection and system performance.*
 
+### 🔗 Sample Dataset
+
+To test or explore the tool with example data, you can download a sample UAV multispectral dataset here:  
+[Download Sample Dataset](**INSERT-YOUR-LINK-HERE**)
+
+This dataset includes RGB, near-infrared (NIR), and red edge (RE) channels compatible with TreeSeg's input requirements.
+
 ## Known Issues
 
 ### ⚠️ Python Imaging Library (PIL) Error
