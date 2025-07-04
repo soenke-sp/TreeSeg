@@ -70,7 +70,3 @@ For more detailed information, please refer to the related paper: [Link to Paper
 ## License
 
 This project is licensed under the [License](LICENSE).
-
-## Contact
-
-For questions or feedback, please contact me at [s41166332@gmail.com](mailto:s41166332@gmail.com).
