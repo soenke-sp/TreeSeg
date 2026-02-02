@@ -66,7 +66,3 @@ The tool automatically downloads the required model checkpoints. For reference, 
 
 ## Reference
 For more detailed information, please refer to the related paper: [Link to Paper](https://www.mdpi.com/2072-4292/16/19/3660).
-
-## License
-
-This project is licensed under the [License](LICENSE).
